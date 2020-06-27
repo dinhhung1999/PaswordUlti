@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="@dimen/_40sdp"
+                android:textSize="@dimen/_40sdp"
+                android:text="LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/etUserName"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="User Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/etPassword"
+                android:layout_margin="@dimen/_10sdp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnSignIn"
+                android:textSize="@dimen/_20sdp"
+                android:text="Sign in"
+                android:layout_margin="@dimen/_70sdp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
