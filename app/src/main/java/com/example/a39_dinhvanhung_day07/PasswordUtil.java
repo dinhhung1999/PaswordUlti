@@ -18,15 +18,4 @@ public class PasswordUtil {
     public boolean hasSymbol(String password){
         return !password.matches("[A-Za-z0-9]*");
     }
-    public boolean hasUpperCase(String password){
-        return !password.equals(password.toLowerCase());
-    }
-    public boolean hasLowerCase(String password){
-        return !password.equals(password.toUpperCase());
-    }
-    public boolean hasNumber(String password){
-        String regex = "(.)*(\\d)(.)*";
-        Pattern pattern = Pattern.compile(regex);
-        return pattern.matcher(password).matches();
-    }
 }

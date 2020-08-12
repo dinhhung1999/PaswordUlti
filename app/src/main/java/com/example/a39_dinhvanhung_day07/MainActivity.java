@@ -29,36 +29,12 @@ public class MainActivity extends AppCompatActivity {
                 if (UserName.equals(User)){
                     if(passwordUtil.hasLength(Password)){
                         if (passwordUtil.hasSpace(Password)){
-                            if (passwordUtil.hasUpperCase(Password)){
-                                if(passwordUtil.hasLowerCase(Password)){
-                                    if (passwordUtil.hasSymbol(Password)){
-                                        if(passwordUtil.hasNumber(Password)){
-                                            if (Password.trim().equals(password)){
-                                                Intent itCreateNewNote = new Intent(getBaseContext(),CreateNewNodeActivity.class);
-                                                startActivity(itCreateNewNote);
-                                            }
-                                            else {
-                                                Toast.makeText(getBaseContext(),"Mật khẩu của bạn chính xác",Toast.LENGTH_LONG).show();
-                                            }
-                                        }
-                                        else {
-                                            Toast.makeText(getBaseContext(),"Mật khẩu của bạn phải có ít nhất 1 số",Toast.LENGTH_LONG).show();
-                                            return;
-                                        }
-                                    }
-                                    else {
-                                        Toast.makeText(getBaseContext(),"Mật khẩu của bạn phải có ký tự đặc biệt",Toast.LENGTH_LONG).show();
-                                        return;
-                                    }
-                                }
-                                else {
-                                    Toast.makeText(getBaseContext(),"Mật khẩu của bạn phải có chữ thường",Toast.LENGTH_LONG).show();
-                                    return;
-                                }
+                            if (Password.trim().equals(password)){
+                                Intent itCreateNewNote = new Intent(getBaseContext(),CreateNewNodeActivity.class);
+                                startActivity(itCreateNewNote);
                             }
                             else {
-                                Toast.makeText(getBaseContext(),"Mật khẩu của bạn phải có chữ hoa",Toast.LENGTH_LONG).show();
-                                return;
+                                Toast.makeText(getBaseContext(),"Mật khẩu của bạn chính xác",Toast.LENGTH_LONG).show();
                             }
                         }
                         else {

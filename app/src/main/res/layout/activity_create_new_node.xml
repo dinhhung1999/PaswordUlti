@@ -109,12 +109,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
+
             <Button
                 android:id="@+id/btnTune"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:text="Tune"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="38dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="Tune" />
         </LinearLayout>
     </RelativeLayout>
 </layout>
